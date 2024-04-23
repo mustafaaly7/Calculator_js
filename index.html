@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body> 
+    <!-- <input type="text" placeholder="enter your name" id="btn">
+    <button  onclick="Hello()" >Click me </button>
+    <button onclick="no()">no </button> -->
+    
+    <div class="calculator">
+        
+        <div class="container">
+            <h1 class="heading">CALCULATOR</h1>
+            <input type="text"  disabled id="number" placeholder="00">
+            <table class="table">
+                
+
+                <tr>
+                    <td onclick="clearLastdigit()" class="clear">C</td>
+                    <td onclick="allClear()" class="clear">AC</td>
+                    <td onclick="num('/')" class="operator">/</td>
+                    <td onclick="num('-')" class="operator">-</td>
+                    
+                </tr>
+                <tr>
+                    <td onclick="num('7')" class="number">7</td>
+                    <td onclick="num('8')"  class="number">8</td>
+                    <td onclick="num('9')"  class="number">9</td>
+                    <td onclick="num('*')" class="operator">X</td>
+
+                </tr>
+                <tr>
+                    <td onclick="num('4')"  class="number">4</td>
+                    <td onclick="num('5')"  class="number">5</td>
+                    <td onclick="num('6')"  class="number">6</td>
+                    <td onclick="num('+')" rowspan="3" class="operator">+</td>
+
+                </tr>
+                <tr>
+                    <td onclick="num('1')"  class="number">1</td>
+                    <td onclick="num('2')"  class="number">2</td>
+                    <td onclick="num('3')"  class="number">3</td>
+
+                </tr>
+
+               
+
+                <tr>
+                    <td onclick="num('.')" class = "decimal">.</td>
+                    <td onclick="num('0')"   class="number">0</td>
+                    <td onclick="calculate()" class="equals">=</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
